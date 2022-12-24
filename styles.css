@@ -38,6 +38,7 @@ body {
 .macey {
   display: flex;
   justify-content: center;
+  position: relative;
   bottom: 0px;
   padding: 0;
   margin: 0;
@@ -220,6 +221,11 @@ HTML CSS JSResult Skip Results Iframe EDIT ON body {
   transform: translate(-60%, -30%);
 }
 
+.about-section{
+  display: flex;
+  flex-direction: column;
+}
+
 .about-container {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -227,13 +233,140 @@ HTML CSS JSResult Skip Results Iframe EDIT ON body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 50px;
-  padding: 15px;
-  width: 6rem;
+  margin: 150px 50px 50px 250px;
+  padding:3%;
+  font-size: 3.2vw;
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  
+}
+.about-container-2 {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 190px 50px 50px;
+  padding: 3%;
+  font-size: 3.7vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.about-container-3 {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 150px 50px 150px;
+  padding: 3%;
+  font-size: 3.2vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
 }
 
 .about-section {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.slide-container{
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+  border: 10px solid #ffffffc3;
+  border-radius: 8px;
+  box-shadow: -1px 5px 15px black;
+  margin-top: 100px;
+  z-index: -3;
+}
+
+
+/*Area of images*/
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.slide{
+  width: 100%;
+}
+/*Animation activated by keyframes*/
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1000;
+}
+
+.project-btn{
+  background-color: rgba(255, 255, 255, 0.817);
+  color:black;
+  border: 1px rgba(91, 54, 120, 0.438) solid;
+  height: 40px;
+  width: 125px;
+  margin-top: 25px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  
+}
+
+.project-btn:hover{
+  background-color: rgba(255, 255, 255, 0.873);
+  border:rgba(91, 54, 120, 0.849) solid 1px;
+}
+
+footer{
+  height: 350px;
+}
+
+.bucket{
+  list-style: none;
+}
+
+.bl{
+  padding: 10px;
+  font-size: 2.9vw;
 }
